@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Tester</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            overflow-y: hidden;
+        }
+        div input {
+            width: 50%;
+            height: 120px;
+            line-height: 100px;
+            padding: 10px;
+            font-size: 2rem;
+            transform-origin: center;
+            transform: translateY(40vh);
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body id="body">
+    <div>
+        <input type="text" name="" id="colorName" placeholder="Input color name or hex code" onkeyup="changeColor()">
+    </div>
+
+    <script>
+        let body = document.getElementById("body")
+        function changeColor(){
+            let colorValue = document.getElementById("colorName").value 
+            body.style.backgroundColor = colorValue
+        }
+
+    </script>
+
+
+</body>
+
+
+</html>
